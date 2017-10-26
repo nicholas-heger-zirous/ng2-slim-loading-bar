@@ -12,10 +12,12 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/akopkokhyants.svg?st
 
 _Some of these APIs and Components are not final and are subject to change!_
 
+This is a fork of https://github.com/akserg/ng2-slim-loading-bar
+
 ## Installation
 
 ```sh
-npm install ng2-slim-loading-bar --save
+npm install ng2-slim-loading-bar-observables --save
 ```
 
 ## Demo
