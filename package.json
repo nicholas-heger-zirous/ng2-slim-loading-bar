@@ -1,12 +1,12 @@
 {
   "name": "ng2-slim-loading-bar-observables",
   "description": "Angular2 component shows slim loading bar at the top of the page. Uses Observable.interval() instead of setInterval() to avoid pending macrotask in Angular.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
     "commit": "npm run prepublish && npm test && git-cz",
-    "prepublish": "ngc && npm run build",
+    "prepublishaa": "ngc && npm run build",
     "build": "webpack && cp style.css bundles/style.css",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -32,21 +32,23 @@
   "typings": "index.d.ts",
   "homepage": "https://github.com/eduardmarcinco/ng2-slim-loading-bar",
   "peerDependencies": {
-    "@angular/core": "^2.4.7 || ^5.0.0 || ^6.0.0"
+    "@angular/core": "^6.0.9",
+    "typescript": "2.7.2"
   },
   "devDependencies": {
-    "@angular/common": "^2.4.7",
-    "@angular/compiler": "^2.4.7",
-    "@angular/compiler-cli": "^2.4.7",
-    "@angular/core": "^2.4.7",
-    "@angular/platform-browser": "^2.4.7",
-    "@angular/platform-browser-dynamic": "^2.4.7",
-    "@angular/platform-server": "^2.4.7",
+    "@angular/animations": "6.0.9",
+    "@angular/common": "6.0.9",
+    "@angular/compiler": "6.0.9",
+    "@angular/compiler-cli": "6.0.9",
+    "@angular/core": "6.0.9",
+    "@angular/platform-browser": "6.0.9",
+    "@angular/platform-browser-dynamic": "6.0.9",
+    "@angular/platform-server": "6.0.9",
     "@types/hammerjs": "^2.0.33",
-    "@types/jasmine": "2.5.37",
-    "@types/node": "6.0.46",
-    "awesome-typescript-loader": "2.2.4",
-    "codelyzer": "2.0.0-beta.2",
+    "@types/jasmine": "2.8.4",
+    "@types/node": "8.9.4",
+    "awesome-typescript-loader": "3.5.0",
+    "codelyzer": "^4.4.2",
     "commitizen": "2.8.6",
     "core-js": "2.4.1",
     "cz-conventional-changelog": "1.2.0",
@@ -54,8 +56,8 @@
     "jasmine-core": "2.5.2",
     "karma": "1.3.0",
     "karma-chrome-launcher": "2.0.0",
-    "karma-firefox-launcher": "1.0.0",
     "karma-coverage": "1.1.1",
+    "karma-firefox-launcher": "1.0.0",
     "karma-jasmine": "1.0.2",
     "karma-mocha-reporter": "^2.1.0",
     "karma-remap-coverage": "~0.1.2",
@@ -63,19 +65,22 @@
     "karma-webpack": "^2.0.1",
     "loader-utils": "~0.2.16",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.3",
+    "rxjs": "^6.0.0",
     "semantic-release": "^8.2.0",
     "source-map-loader": "0.1.5",
     "ts-helpers": "1.1.2",
-    "tslint": "~4.0.0",
-    "tslint-loader": "3.3.0",
-    "typescript": "2.0.10",
-    "webpack": "2.2.0",
-    "zone.js": "^0.7.6"
+    "tslint": "~5.9.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": "2.7.2",
+    "webpack": "3.12.0",
+    "zone.js": "^0.8.26"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@angular/cli": "^6.0.8"
   }
 }

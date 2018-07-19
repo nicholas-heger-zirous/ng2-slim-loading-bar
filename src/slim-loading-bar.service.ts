@@ -5,12 +5,7 @@
 import {Injectable} from '@angular/core';
 
 import {isPresent} from './slim-loading-bar.utils';
-import {Subject} from 'rxjs/Subject';
-import {Observable} from 'rxjs/Observable';
-import "rxjs/add/observable/interval";
-import { Subscription } from "rxjs/Subscription";
-import "rxjs/add/operator/takeUntil";
-import "rxjs/add/operator/takeWhile";
+import {Subject, Observable,  Subscription, interval } from 'rxjs';
 
 export enum SlimLoadingBarEventType {
     PROGRESS,
@@ -104,7 +99,7 @@ export class SlimLoadingBarService {
         // Make it visible for sure
         this.visible = true;
         // Run the timer with milliseconds iterval
-        this._intervalSubscription = Observable.interval(this.interval).subscribe(() => {
+        this._intervalSubscription = interval(this.interval).subscribe(() => {
             this.progress++;
             if (this.progress === 100) {
                 this.complete();
