@@ -1,7 +1,7 @@
 {
   "name": "ng2-slim-loading-bar-observables",
   "description": "Angular2 component shows slim loading bar at the top of the page. Uses Observable.interval() instead of setInterval() to avoid pending macrotask in Angular.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
@@ -32,23 +32,23 @@
   "typings": "index.d.ts",
   "homepage": "https://github.com/eduardmarcinco/ng2-slim-loading-bar",
   "peerDependencies": {
-    "@angular/core": "^8.0.0-rc.2",
-    "typescript": "^3.4.5"
+    "@angular/core": "^9.0.0",
+    "typescript": "^3.7.5"
   },
   "devDependencies": {
-    "@angular/animations": "^8.0.0-rc.2",
-    "@angular/common": "^8.0.0-rc.2",
-    "@angular/compiler": "^8.0.0-rc.2",
-    "@angular/compiler-cli": "^8.0.0-rc.2",
-    "@angular/core": "^8.0.0-rc.2",
-    "@angular/platform-browser": "^8.0.0-rc.2",
-    "@angular/platform-browser-dynamic": "^8.0.0-rc.2",
-    "@angular/platform-server": "^8.0.0-rc.2",
+    "@angular/animations": "^9.0.0",
+    "@angular/common": "^9.0.0",
+    "@angular/compiler": "^9.0.0",
+    "@angular/compiler-cli": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "@angular/platform-browser": "^9.0.0",
+    "@angular/platform-browser-dynamic": "^9.0.0",
+    "@angular/platform-server": "^9.0.0",
     "@types/hammerjs": "^2.0.36",
     "@types/jasmine": "^3.3.0",
-    "@types/node": "8.9.4",
+    "@types/node": "10.17.14",
     "awesome-typescript-loader": "3.5.0",
-    "codelyzer": "^4.5.0",
+    "codelyzer": "^5.2.1",
     "commitizen": "^3.1.1",
     "core-js": "2.5.7",
     "cz-conventional-changelog": "^2.1.0",
@@ -65,13 +65,14 @@
     "karma-webpack": "^3.0.5",
     "loader-utils": "^1.1.0",
     "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.3.3",
+    "rxjs": "^6.5.3",
     "semantic-release": "^15.12.0",
     "source-map-loader": "^0.2.4",
     "ts-helpers": "^1.1.2",
-    "tslint": "^5.11.0",
-    "tslint-loader": "^3.5.4",
-    "typescript": "^3.4.5",
+    "tslib": "1.10.0",
+    "tslint": "^5.20.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^3.7.5",
     "webpack": "^3.12.0",
     "zone.js": "^0.8.26"
   },
@@ -81,6 +82,6 @@
     }
   },
   "dependencies": {
-    "@angular/cli": "^8.0.0-rc.2"
+    "@angular/cli": "^9.0.1"
   }
 }
