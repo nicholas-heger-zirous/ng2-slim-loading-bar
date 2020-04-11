@@ -2,7 +2,7 @@
 // This project is licensed under the terms of the MIT license.
 // https://github.com/akserg/ng2-slim-loading-bar
 
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { SlimLoadingBarService, SlimLoadingBarEvent, SlimLoadingBarEventType } from './slim-loading-bar.service';
 import { isPresent } from './slim-loading-bar.utils';
@@ -18,16 +18,14 @@ import { isPresent } from './slim-loading-bar.utils';
         [style.height]="height" [style.opacity]="show ? '1' : '0'"></div>
 </div>`
 })
-export class SlimLoadingBarComponent implements OnInit {
+export class SlimLoadingBarComponent {
 
     @Input() progress: string = '0';
     @Input() color: string = 'firebrick';
     @Input() height: string = '2px';
     @Input() show: boolean = true;
 
-    constructor(public service: SlimLoadingBarService) { }
-
-    ngOnInit(): any {
+    constructor(public service: SlimLoadingBarService) {
         this.service.events.subscribe((event: SlimLoadingBarEvent) => {
             if (event.type === SlimLoadingBarEventType.PROGRESS && isPresent(event.value)) {
                 this.progress = event.value;

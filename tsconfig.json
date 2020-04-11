@@ -2,7 +2,7 @@
   "compilerOptions": {
     "noImplicitAny": true,
     "module": "es2015",
-    "target": "es5",
+    "target": "es2015",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "declaration": true,
@@ -12,7 +12,7 @@
       "jasmine",
       "node"
     ],
-    "lib": ["es2015", "dom"],
+    "lib": ["es2015", "dom"]
     //typingOptions: { enableAutoDiscovery: false, include: [], exclude: [] },
   },
   "files": [
