@@ -1,7 +1,7 @@
 {
   "name": "ng2-slim-loading-bar-observables",
   "description": "Angular2 component shows slim loading bar at the top of the page. Uses Observable.interval() instead of setInterval() to avoid pending macrotask in Angular.",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
@@ -46,12 +46,12 @@
     "@types/node": "8.10.52",
     "awesome-typescript-loader": "4.0.1",
     "codelyzer": "^5.2.1",
-    "commitizen": "^3.1.1",
+    "commitizen": "^4.2.3",
     "core-js": "2.5.7",
     "cz-conventional-changelog": "^2.1.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine-core": "^3.3.0",
-    "karma": "^3.1.1",
+    "karma": "^6.3.2",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.2",
     "karma-firefox-launcher": "^1.1.0",
