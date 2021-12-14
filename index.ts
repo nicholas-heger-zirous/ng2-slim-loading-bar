@@ -16,7 +16,7 @@ export * from './src/slim-loading-bar.service';
     providers: [SlimLoadingBarService]
 })
 export class SlimLoadingBarModule {
-    static forRoot(): ModuleWithProviders<any> {
+    static forRoot(): ModuleWithProviders<SlimLoadingBarModule> {
         return {
             ngModule: SlimLoadingBarModule,
             providers: [SlimLoadingBarService]
